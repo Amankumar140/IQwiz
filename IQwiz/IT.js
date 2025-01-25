@@ -19,188 +19,386 @@ function startTimer() {
 }
 
 // Randomize and Load Questions
-const questions = [
+const questions=[
   {
-    question: "Find the invalid variable among the following:",
-    choices: ["1st_string", "my_string_1", " _", "foo"],
+    question: "In a digital circuit, the term 'fan-out' refers to the:",
+    choices: [
+      "Number of inputs that a single output can drive without exceeding specified voltage levels",
+      "Number of outputs that a single input can drive without exceeding specified voltage levels",
+      "Maximum frequency at which the circuit can operate",
+      "Total number of logic gates in the circuit",
+    ],
     answer: 0,
   },
   {
-    question: "Which one of these is incorrect?",
-    choices: [
-      "float(‘nan’)",
-      "float(‘inf’)",
-      "float(’12+34′)",
-      "float(’56’+’78’)",
-    ],
-    answer: 2,
+    question: "Which of the following is a valid identifier in C?",
+    choices: ["int 1value;", "float value$;", "double value@;", "char value#;"],
+    answer: 1,
   },
   {
     question:
-      "The value of the Python expression given below would be: <br>4+2**5//10",
-    choices: ["77", "0", "3", "7"],
+      "Which data structure is used in the implementation of recursion?",
+    choices: ["Queue", "Stack", "Linked List", "Array"],
+    answer: 1,
+  },
+  {
+    question: "Which of the following is a non-primitive data type?",
+    choices: ["int", "float", "char", "String"],
     answer: 3,
   },
-
   {
-    question: "Closeness of two or more measured values is called as",
-    choices: ["accuracy", "precision", "error", "approximation"],
-    answer: 2,
-  },
-  {
-    question: "Closeness of two or more measured values is called as",
-    choices: ["accuracy", "precision", "error", "approximation"],
-    answer: 2,
-  },
-  {
-    question: "Which of the following is a property of acids?",
+    question: "Which of the following is a valid SQL statement?",
     choices: [
-      "Bitter taste",
-      "Turns red litmus paper blue",
-      "Reacts with metals to release hydrogen",
-      "Slippery feel",
+      "SELECT * FROM table WHERE condition;",
+      "INSERT INTO table VALUES (value1, value2);",
+      "UPDATE table SET column = value WHERE condition;",
+      "All of the above",
     ],
     answer: 3,
   },
   {
-    question: "What is the chemical formula of water?",
-    choices: ["H2O", "CO2", "NaCl", "H2O2"],
-    answer: 1,
-  },
-  {
-    question: "Which of the following elements is a noble gas?",
-    choices: ["Oxygen", "Neon", "Carbon", "Nitrogen"],
-    answer: 2,
-  },
-  {
-    question: "What is the atomic number of Carbon?",
-    choices: [6, 8, 12, 14],
-    answer: 0,
-  },
-  {
-    question: "Which of the following is an example of an exothermic reaction?",
+    question:
+      "Which algorithm is used for finding the shortest path in a graph?",
     choices: [
-      "Melting of ice",
-      "Boiling of water",
-      "Burning of wood",
-      "Dissolution of salt in water",
+      "Dijkstra's Algorithm",
+      "Kruskal's Algorithm",
+      "Prim's Algorithm",
+      "Bellman-Ford Algorithm",
     ],
-    answer: 2,
+    answer: 0,
   },
   {
     question:
-      "Which type of bond is formed by the sharing of electron pairs between atoms?",
-    choices: ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"],
-    answer: 1,
-  },
-  {
-    question: "What is the pH of a neutral solution at 25°C?",
-    choices: [4, 5, 7, 9],
-    answer: 2,
-  },
-  {
-    question:
-      "Which of the following substances is most likely to dissolve in water?",
-    choices: ["Oil", "Sugar", "Iodine", "Sand"],
-    answer: 1,
-  },
-  {
-    question: "What is the molar mass of oxygen (O) in g/mol?",
-    choices: [16, 18, 32, 40],
-    answer: 0,
-  },
-  {
-    question: "Which gas is produced when an acid reacts with a metal?",
-    choices: ["Hydrogen", "Oxygen", "Nitrogen", "Carbon dioxide"],
-    answer: 0,
-  },
-  {
-    question: "Which of the following is a strong acid?",
-    choices: ["Acetic acid", "Citric acid", "Hydrochloric acid", "Formic acid"],
-    answer: 2,
-  },
-  {
-    question:
-      "What is the name of the process by which a solid turns directly into a gas?",
-    choices: ["Condensation", "Sublimation", "Deposition", "Evaporation"],
-    answer: 1,
-  },
-  {
-    question: "What is the primary component of natural gas?",
-    choices: ["Methane", "Ethane", "Propane", "Butane"],
-    answer: 0,
-  },
-  {
-    question: "Which of the following is the lightest element?",
-    choices: ["Hydrogen", "Helium", "Oxygen", "Nitrogen"],
-    answer: 0,
-  },
-  {
-    question: "Which of the following is NOT a property of metals?",
-    choices: ["Conducts electricity", "Malleable", "Brittle", "Lustrous"],
-    answer: 2,
-  },
-  {
-    question: "Which molecule is an example of a polar covalent bond?",
-    choices: ["H2", "O2", "H2O", "N2"],
-    answer: 2,
-  },
-  {
-    question: "What is the common name for sodium chloride?",
-    choices: ["Baking soda", "Table salt", "Epsom salt", "Lime"],
-    answer: 1,
-  },
-  {
-    question: "Which of the following is an example of a chemical change?",
+      "Which of the following is a characteristic of a deadlock in an operating system?",
     choices: [
-      "Melting of ice",
-      "Boiling of water",
-      "Rusting of iron",
-      "Dissolving of sugar in water",
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "No Preemption",
+      "All of the above",
     ],
-    answer: 2,
+    answer: 3,
   },
   {
-    question: "Which part of the atom has a negative charge?",
-    choices: ["Proton", "Neutron", "Electron", "Nucleus"],
-    answer: 2,
+    question: "Which of the following is a type of malware?",
+    choices: ["Virus", "Worm", "Trojan Horse", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a valid HTML tag?",
+    choices: ["<div>", "<span>", "<p>", "All of the above"],
+    answer: 3,
   },
   {
     question:
-      "Which element is commonly used in the production of semiconductors?",
-    choices: ["Silicon", "Iron", "Gold", "Copper"],
-    answer: 0,
-  },
-  {
-    question:
-      "What type of reaction occurs when two substances combine to form a compound?",
+      "Which of the following is a feature of object-oriented programming?",
     choices: [
-      "Decomposition",
-      "Synthesis",
-      "Single replacement",
-      "Double replacement",
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "All of the above",
     ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of database relationship?",
+    choices: ["One-to-One", "One-to-Many", "Many-to-Many", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of sorting algorithm?",
+    choices: ["Bubble Sort", "Quick Sort", "Merge Sort", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of network topology?",
+    choices: ["Bus", "Star", "Ring", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of operating system?",
+    choices: [
+      "Batch Processing",
+      "Time-Sharing",
+      "Real-Time",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of computer memory?",
+    choices: ["RAM", "ROM", "Cache", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of programming language?",
+    choices: ["High-Level", "Low-Level", "Assembly", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of software?",
+    choices: [
+      "System Software",
+      "Application Software",
+      "Utility Software",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of computer virus?",
+    choices: [
+      "Boot Sector Virus",
+      "Macro Virus",
+      "File Infector Virus",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of computer network?",
+    choices: ["LAN", "WAN", "MAN", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of computer architecture?",
+    choices: [
+      "Von Neumann Architecture",
+      "Harvard Architecture",
+      "Modified Harvard Architecture",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of computer input device?",
+    choices: ["Keyboard", "Mouse", "Scanner", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of computer output device?",
+    choices: ["Monitor", "Printer", "Speaker", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of computer storage device?",
+    choices: [
+      "Hard Disk",
+      "Solid State Drive",
+      "Optical Disk",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of computer display device?",
+    choices: ["CRT Monitor", "LCD Monitor", "LED Monitor", "All of the above"],
+    answer: 3,
+  },
+  {
+    question:
+      "Which of the following is a type of computer communication device?",
+    choices: ["Modem", "Router", "Switch", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which data structure uses LIFO (Last In First Out) order?",
+    choices: ["Queue", "Stack", "Linked List", "Array"],
     answer: 1,
   },
   {
-    question: "Which of the following is an example of an ionic compound?",
-    choices: ["NaCl", "H2O", "C6H12O6", "CO2"],
+    question: "In a binary tree, the maximum number of nodes at level 'l' is:",
+    choices: ["2^l", "2^(l+1) - 1", "2^(l-1)", "2^l - 1"],
     answer: 0,
   },
   {
-    question: "Which of the following compounds is a strong base?",
-    choices: ["NaOH", "NH3", "HCl", "CH3COOH"],
+    question:
+      "Which algorithm is used for finding the shortest path in a weighted graph?",
+    choices: [
+      "Dijkstra's Algorithm",
+      "Kruskal's Algorithm",
+      "Prim's Algorithm",
+      "Bellman-Ford Algorithm",
+    ],
     answer: 0,
+  },
+  {
+    question: "Which of the following is a non-primitive data type?",
+    choices: ["Integer", "Float", "Array", "Character"],
+    answer: 2,
+  },
+  {
+    question:
+      "Which sorting algorithm has the best average-case time complexity?",
+    choices: ["Quick Sort", "Merge Sort", "Bubble Sort", "Insertion Sort"],
+    answer: 1,
+  },
+  {
+    question:
+      "Which of the following is a characteristic of a deadlock in operating systems?",
+    choices: [
+      "Mutual Exclusion",
+      "Preemption",
+      "Circular Wait",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of non-relational database?",
+    choices: ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+    answer: 2,
+  },
+  {
+    question:
+      "Which protocol is used for secure communication over a computer network?",
+    choices: ["HTTP", "FTP", "HTTPS", "SMTP"],
+    answer: 2,
+  },
+  {
+    question:
+      "Which of the following is a feature of object-oriented programming?",
+    choices: [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a valid IPv4 address?",
+    choices: [
+      "192.168.1.1",
+      "256.256.256.256",
+      "192.168.1.256",
+      "192.168.1.1.1",
+    ],
+    answer: 0,
+  },
+  {
+    question: "Which of the following is a type of malware?",
+    choices: ["Virus", "Trojan Horse", "Worm", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of loop in programming?",
+    choices: ["For Loop", "While Loop", "Do-While Loop", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of operating system?",
+    choices: ["Windows", "Linux", "macOS", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of computer memory?",
+    choices: ["RAM", "ROM", "Cache", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of computer network?",
+    choices: ["LAN", "WAN", "MAN", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of database management system?",
+    choices: [
+      "Relational DBMS",
+      "Hierarchical DBMS",
+      "Network DBMS",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of programming language?",
+    choices: ["C", "Java", "Python", "All of the above"],
+    answer: 3,
+  },
+  {
+    question:
+      "Which of the following is a type of software development methodology?",
+    choices: ["Agile", "Waterfall", "Scrum", "All of the above"],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of software testing?",
+    choices: [
+      "Unit Testing",
+      "Integration Testing",
+      "System Testing",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of software development model?",
+    choices: [
+      "V-Model",
+      "Spiral Model",
+      "Incremental Model",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of software maintenance?",
+    choices: [
+      "Corrective Maintenance",
+      "Adaptive Maintenance",
+      "Perfective Maintenance",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of software engineering?",
+    choices: [
+      "Requirements Engineering",
+      "Design Engineering",
+      "Testing Engineering",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of software architecture?",
+    choices: [
+      "Layered Architecture",
+      "Client-Server Architecture",
+      "Microservices Architecture",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of software design pattern?",
+    choices: [
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Observer Pattern",
+      "All of the above",
+    ],
+    answer: 3,
+  },
+  {
+    question: "Which of the following is a type of software development tool?",
+    choices: [
+      "Version Control System",
+      "Integrated Development Environment",
+      "Build Automation Tool",
+      "All of the above",
+    ],
+    answer: 3,
   },
 ];
+
 // Add more questions as desired
 
-let incorrectQuestions = []; // Store incorrect questions for display on result page
-//console.log(questions);
+console.log(questions);
 
 let currentQuestionIndex = 0;
 let userAnswers = Array(questions.length).fill(null);
-let selectedQuestions = [];
 
 // Shuffle function to randomize the questions array
 
@@ -267,98 +465,37 @@ function saveAnswer() {
 function submitQuiz() {
   clearInterval(timerInterval);
   let correctAnswers = 0;
-  selectedQuestions.forEach((q, index) => {
+  questions.forEach((q, index) => {
     if (userAnswers[index] === q.answer) correctAnswers++;
-    else {
-      incorrectQuestions.push({
-        question: q.question,
-        choices: q.choices,
-        correctAnswer: q.choices[q.answer],
-        userAnswer: q.choices[userAnswers[index]],
-      });
-    }
   });
   sessionStorage.setItem("correctAnswers", correctAnswers);
   sessionStorage.setItem("totalQuestions", questions.length);
-  sessionStorage.setItem(
-    "incorrectQuestions",
-    JSON.stringify(incorrectQuestions)
-  ); // Store incorrect questions
   window.location.href = "result.html";
 }
 
+// Load Result and Display Pie Chart
 window.onload = function () {
   if (window.location.pathname.includes("result.html")) {
-    displayResults();
+    const correctAnswers = parseInt(sessionStorage.getItem("correctAnswers"));
+    const totalQuestions = parseInt(sessionStorage.getItem("totalQuestions"));
+    const ctx = document.getElementById("resultChart").getContext("2d");
+    new Chart(ctx, {
+      type: "pie",
+      data: {
+        labels: ["Correct", "Incorrect"],
+        datasets: [
+          {
+            data: [correctAnswers, 20 - correctAnswers],
+            backgroundColor: ["#4CAF50", "#FF5252"],
+          },
+        ],
+      },
+    });
+    document.getElementById(
+      "result-summary"
+    ).innerHTML = `You got ${correctAnswers} out of 20 questions correct.`;
   }
 };
-
-// Load Result and Display Pie Chart
-function displayResults() {
-  const correctAnswers = parseInt(sessionStorage.getItem("correctAnswers"));
-  const totalQuestions = parseInt(sessionStorage.getItem("totalQuestions"));
-  const incorrectQuestions = JSON.parse(sessionStorage.getItem("incorrectQuestions"));
-
-  const ctx = document.getElementById("resultChart").getContext("2d");
-  new Chart(ctx, {
-    type: "pie",
-    data: {
-      labels: ["Correct", "Incorrect"],
-      datasets: [
-        {
-          data: [correctAnswers, totalQuestions - correctAnswers],
-          backgroundColor: ["#4CAF50", "#FF5252"],
-        },
-      ],
-    },
-  });
-
-  document.getElementById(
-    "result-summary"
-  ).innerHTML = `You got ${correctAnswers} out of ${totalQuestions} questions correct.`;
-
-  
-}
-// Function to display incorrect questions
-function displayIncorrectQuestions() {
-  const incorrectContainer = document.getElementById("incorrect-questions");
-  incorrectQuestions.forEach((q, index) => {
-    incorrectContainer.innerHTML += `
-      <div>
-        <h4>Question ${index + 1}: ${q.question}</h4>
-        <p>Your Answer: ${q.userAnswer || "Not Answered"}</p>
-        <p>Correct Answer: ${q.correctAnswer}</p>
-      </div>
-    `;
-    
-  });
-
-    // Call Gemini AI API for additional information
-    
-  
-}
-
-// Function to fetch additional information from Gemini AI
-function fetchGeminiAI(question) {
-  const apiKey = "AIzaSyAJua5j7r24hqRagD_HWL26ajJIh5NZ3OM"; // Your API key
-  const url = `https://gemini.googleapis.com/v1/your-endpoint?question=${encodeURIComponent(
-    question
-  )}&key=${apiKey}`;
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      // Process and display the response from Gemini AI
-      const aiResponse = data.answer; // Adjust based on actual response structure
-      const responseElement = document.createElement("p");
-      responseElement.innerHTML = `AI Response: ${aiResponse}`;
-      document
-        .getElementById("incorrect-questions")
-        .appendChild(responseElement);
-    })
-    .catch((error) => {
-      console.error("Error fetching from Gemini AI:", error);
-    });
-}
 
 startTimer();
 loadQuestion();

@@ -21,154 +21,311 @@ function startTimer() {
 // Randomize and Load Questions
 const questions = [
   {
-    question: "Find the invalid variable among the following:",
-    choices: ["1st_string", "my_string_1", " _", "foo"],
+    question: "What is the SI unit of electric charge?",
+    choices: ["Coulomb", "Ampere", "Volt", "Ohm"],
     answer: 0,
   },
   {
-    question: "Which one of these is incorrect?",
+    question: "Which of the following is a vector quantity?",
+    choices: ["Speed", "Distance", "Velocity", "Energy"],
+    answer: 2,
+  },
+  {
+    question: "What is the acceleration due to gravity on Earth?",
+    choices: ["9.8 m/s²", "10 m/s²", "9.8 km/s²", "10 km/s²"],
+    answer: 0,
+  },
+  {
+    question:
+      "Which law states that the total energy of an isolated system remains constant?",
     choices: [
-      "float(‘nan’)",
-      "float(‘inf’)",
-      "float(’12+34′)",
-      "float(’56’+’78’)",
+      "Newton's First Law",
+      "Law of Conservation of Energy",
+      "Hooke's Law",
+      "Boyle's Law",
+    ],
+    answer: 1,
+  },
+  {
+    question: "What is the SI unit of power?",
+    choices: ["Joule", "Watt", "Newton", "Pascal"],
+    answer: 1,
+  },
+  {
+    question:
+      "Which of the following is the correct formula for kinetic energy?",
+    choices: ["KE = m × v", "KE = m × v²", "KE = ½ × m × v²", "KE = m × v³"],
+    answer: 2,
+  },
+  {
+    question: "What is the SI unit of electric current?",
+    choices: ["Volt", "Ampere", "Coulomb", "Ohm"],
+    answer: 1,
+  },
+  {
+    question: "Which of the following is a non-conservative force?",
+    choices: [
+      "Gravitational force",
+      "Electrostatic force",
+      "Frictional force",
+      "Magnetic force",
     ],
     answer: 2,
   },
   {
-    question: "The value of the Python expression given below would be: <br>4+2**5//10",
-    choices: ["77", "0", "3", "7"],
-    answer: 3,
-  },
-   
- 
-  {
-    question: "Closeness of two or more measured values is called as",
-    choices: ["accuracy", "precision", "error", "approximation"],
-    answer: 2
+    question: "What is the SI unit of frequency?",
+    choices: ["Hertz", "Joule", "Newton", "Pascal"],
+    answer: 0,
   },
   {
-    question: "Closeness of two or more measured values is called as",
-    choices: ["accuracy", "precision", "error", "approximation"],
-    answer: 2
+    question: "Which of the following is the correct formula for Ohm's Law?",
+    choices: ["V = I × R", "V = I / R", "V = R / I", "V = I² × R"],
+    answer: 0,
   },
   {
-    question: "Which of the following is a property of acids?",
-    choices: ["Bitter taste", "Turns red litmus paper blue", "Reacts with metals to release hydrogen", "Slippery feel"],
-    answer: 3
+    question: "What is the SI unit of electric potential difference?",
+    choices: ["Volt", "Ampere", "Coulomb", "Ohm"],
+    answer: 0,
   },
   {
-    question: "What is the chemical formula of water?",
-    choices: ["H2O", "CO2", "NaCl", "H2O2"],
-    answer: 1
+    question:
+      "Which of the following is the correct formula for gravitational potential energy?",
+    choices: [
+      "PE = m × g × h",
+      "PE = m × g × h²",
+      "PE = m × g × h³",
+      "PE = m × g × h⁴",
+    ],
+    answer: 0,
   },
   {
-    question: "Which of the following elements is a noble gas?",
-    choices: ["Oxygen", "Neon", "Carbon", "Nitrogen"],
-    answer: 2
+    question: "What is the SI unit of work?",
+    choices: ["Joule", "Watt", "Newton", "Pascal"],
+    answer: 0,
   },
   {
-    question: "What is the atomic number of Carbon?",
-    choices: [6, 8, 12, 14],
-    answer: 0
+    question: "Which of the following is the correct formula for Hooke's Law?",
+    choices: ["F = k × x", "F = k / x", "F = x / k", "F = k × x²"],
+    answer: 0,
   },
   {
-    question: "Which of the following is an example of an exothermic reaction?",
-    choices: ["Melting of ice", "Boiling of water", "Burning of wood", "Dissolution of salt in water"],
-    answer: 2
+    question: "What is the SI unit of pressure?",
+    choices: ["Pascal", "Newton", "Joule", "Watt"],
+    answer: 0,
   },
   {
-    question: "Which type of bond is formed by the sharing of electron pairs between atoms?",
-    choices: ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"],
-    answer: 1
+    question:
+      "Which of the following is the correct formula for centripetal acceleration?",
+    choices: ["a = v² / r", "a = v / r", "a = r / v", "a = v³ / r"],
+    answer: 0,
   },
   {
-    question: "What is the pH of a neutral solution at 25°C?",
-    choices: [4, 5, 7, 9],
-    answer: 2
+    question: "What is the SI unit of electric resistance?",
+    choices: ["Ohm", "Volt", "Ampere", "Coulomb"],
+    answer: 0,
   },
   {
-    question: "Which of the following substances is most likely to dissolve in water?",
-    choices: ["Oil", "Sugar", "Iodine", "Sand"],
-    answer: 1
+    question:
+      "Which of the following is the correct formula for Coulomb's Law?",
+    choices: [
+      "F = k × (q₁ × q₂) / r²",
+      "F = k × (q₁ × q₂) / r",
+      "F = k × (q₁ × q₂) / r³",
+      "F = k × (q₁ × q₂) / r⁴",
+    ],
+    answer: 0,
   },
   {
-    question: "What is the molar mass of oxygen (O) in g/mol?",
-    choices: [16, 18, 32, 40],
-    answer: 0
+    question: "What is the SI unit of electric charge?",
+    choices: ["Coulomb", "Ampere", "Volt", "Ohm"],
+    answer: 0,
   },
   {
-    question: "Which gas is produced when an acid reacts with a metal?",
-    choices: ["Hydrogen", "Oxygen", "Nitrogen", "Carbon dioxide"],
-    answer: 0
+    question:
+      "Which of the following is the correct formula for the period of a simple pendulum?",
+    choices: [
+      "T = 2π√(l / g)",
+      "T = 2π√(g / l)",
+      "T = 2π√(l × g)",
+      "T = 2π√(g / l²)",
+    ],
+    answer: 0,
   },
   {
-    question: "Which of the following is a strong acid?",
-    choices: ["Acetic acid", "Citric acid", "Hydrochloric acid", "Formic acid"],
-    answer: 2
+    question: "What is the SI unit of electric field?",
+    choices: [
+      "Volt per meter",
+      "Newton per Coulomb",
+      "Joule per Coulomb",
+      "Tesla",
+    ],
+    answer: 0,
   },
   {
-    question: "What is the name of the process by which a solid turns directly into a gas?",
-    choices: ["Condensation", "Sublimation", "Deposition", "Evaporation"],
-    answer: 1
+    question:
+      "Which of the following is the correct formula for the energy stored in a capacitor?",
+    choices: ["E = ½ × C × V²", "E = C × V²", "E = ½ × C × V", "E = C × V"],
+    answer: 0,
   },
   {
-    question: "What is the primary component of natural gas?",
-    choices: ["Methane", "Ethane", "Propane", "Butane"],
-    answer: 0
+    question: "What is the SI unit of magnetic flux?",
+    choices: ["Weber", "Tesla", "Henry", "Joule"],
+    answer: 0,
   },
   {
-    question: "Which of the following is the lightest element?",
-    choices: ["Hydrogen", "Helium", "Oxygen", "Nitrogen"],
-    answer: 0
+    question: "What is the SI unit of electric charge?",
+    choices: ["Coulomb", "Ampere", "Volt", "Ohm"],
+    answer: 0,
   },
   {
-    question: "Which of the following is NOT a property of metals?",
-    choices: ["Conducts electricity", "Malleable", "Brittle", "Lustrous"],
-    answer: 2
+    question: "Which of the following is a vector quantity?",
+    choices: ["Speed", "Distance", "Velocity", "Energy"],
+    answer: 2,
   },
   {
-    question: "Which molecule is an example of a polar covalent bond?",
-    choices: ["H2", "O2", "H2O", "N2"],
-    answer: 2
+    question: "What is the acceleration due to gravity on Earth?",
+    choices: ["9.8 m/s²", "10 m/s²", "9.8 km/s²", "10 km/s²"],
+    answer: 0,
   },
   {
-    question: "What is the common name for sodium chloride?",
-    choices: ["Baking soda", "Table salt", "Epsom salt", "Lime"],
-    answer: 1
+    question:
+      "Which law states that the total energy of an isolated system remains constant?",
+    choices: [
+      "Newton's First Law",
+      "Law of Conservation of Energy",
+      "Hooke's Law",
+      "Boyle's Law",
+    ],
+    answer: 1,
   },
   {
-    question: "Which of the following is an example of a chemical change?",
-    choices: ["Melting of ice", "Boiling of water", "Rusting of iron", "Dissolving of sugar in water"],
-    answer: 2
+    question: "What is the SI unit of power?",
+    choices: ["Joule", "Watt", "Newton", "Pascal"],
+    answer: 1,
   },
   {
-    question: "Which part of the atom has a negative charge?",
-    choices: ["Proton", "Neutron", "Electron", "Nucleus"],
-    answer: 2
+    question:
+      "Which of the following is the correct formula for kinetic energy?",
+    choices: ["KE = m × v", "KE = m × v²", "KE = ½ × m × v²", "KE = m × v³"],
+    answer: 2,
   },
   {
-    question: "Which element is commonly used in the production of semiconductors?",
-    choices: ["Silicon", "Iron", "Gold", "Copper"],
-    answer: 0
+    question: "What is the SI unit of electric current?",
+    choices: ["Volt", "Ampere", "Coulomb", "Ohm"],
+    answer: 1,
   },
   {
-    question: "What type of reaction occurs when two substances combine to form a compound?",
-    choices: ["Decomposition", "Synthesis", "Single replacement", "Double replacement"],
-    answer: 1
+    question: "Which of the following is a non-conservative force?",
+    choices: [
+      "Gravitational force",
+      "Electrostatic force",
+      "Frictional force",
+      "Magnetic force",
+    ],
+    answer: 2,
   },
   {
-    question: "Which of the following is an example of an ionic compound?",
-    choices: ["NaCl", "H2O", "C6H12O6", "CO2"],
-    answer: 0
+    question: "What is the SI unit of frequency?",
+    choices: ["Hertz", "Joule", "Newton", "Pascal"],
+    answer: 0,
   },
   {
-    question: "Which of the following compounds is a strong base?",
-    choices: ["NaOH", "NH3", "HCl", "CH3COOH"],
-    answer: 0
+    question: "Which of the following is the correct formula for Ohm's Law?",
+    choices: ["V = I × R", "V = I / R", "V = R / I", "V = I² × R"],
+    answer: 0,
   },
-   
+  {
+    question: "What is the SI unit of electric potential difference?",
+    choices: ["Volt", "Ampere", "Coulomb", "Ohm"],
+    answer: 0,
+  },
+  {
+    question:
+      "Which of the following is the correct formula for gravitational potential energy?",
+    choices: [
+      "PE = m × g × h",
+      "PE = m × g × h²",
+      "PE = m × g × h³",
+      "PE = m × g × h⁴",
+    ],
+    answer: 0,
+  },
+  {
+    question: "What is the SI unit of work?",
+    choices: ["Joule", "Watt", "Newton", "Pascal"],
+    answer: 0,
+  },
+  {
+    question: "Which of the following is the correct formula for Hooke's Law?",
+    choices: ["F = k × x", "F = k / x", "F = x / k", "F = k × x²"],
+    answer: 0,
+  },
+  {
+    question: "What is the SI unit of pressure?",
+    choices: ["Pascal", "Newton", "Joule", "Watt"],
+    answer: 0,
+  },
+  {
+    question:
+      "Which of the following is the correct formula for centripetal acceleration?",
+    choices: ["a = v² / r", "a = v / r", "a = r / v", "a = v³ / r"],
+    answer: 0,
+  },
+  {
+    question: "What is the SI unit of electric resistance?",
+    choices: ["Ohm", "Volt", "Ampere", "Coulomb"],
+    answer: 0,
+  },
+  {
+    question:
+      "Which of the following is the correct formula for Coulomb's Law?",
+    choices: [
+      "F = k × (q₁ × q₂) / r²",
+      "F = k × (q₁ × q₂) / r",
+      "F = k × (q₁ × q₂) / r³",
+      "F = k × (q₁ × q₂) / r⁴",
+    ],
+    answer: 0,
+  },
+  {
+    question: "What is the SI unit of electric charge?",
+    choices: ["Coulomb", "Ampere", "Volt", "Ohm"],
+    answer: 0,
+  },
+  {
+    question:
+      "Which of the following is the correct formula for the period of a simple pendulum?",
+    choices: [
+      "T = 2π√(l / g)",
+      "T = 2π√(g / l)",
+      "T = 2π√(l × g)",
+      "T = 2π√(g / l²)",
+    ],
+    answer: 0,
+  },
+  {
+    question: "What is the SI unit of electric field?",
+    choices: [
+      "Volt per meter",
+      "Newton per Coulomb",
+      "Joule per Coulomb",
+      "Tesla",
+    ],
+    answer: 0,
+  },
+  {
+    question:
+      "Which of the following is the correct formula for the energy stored in a capacitor?",
+    choices: ["E = ½ × C × V²", "E = C × V²", "E = ½ × C × V", "E = C × V"],
+    answer: 0,
+  },
+  {
+    question: "What is the SI unit of magnetic flux?",
+    choices: ["Weber", "Tesla", "Henry", "Joule"],
+    answer: 0,
+  },
 ];
+
 // Add more questions as desired
 
 console.log(questions);
@@ -198,7 +355,7 @@ function loadQuestion() {
   if (selectedQuestions.length === 0) {
     selectRandomQuestions(); // Initialize selectedQuestions once at the start
   }
- 
+
   const questionElement = document.getElementById("question-container");
   const question = selectedQuestions[currentQuestionIndex];
   questionElement.innerHTML = `<h3> ${count}. ${question.question}</h3>`;
@@ -208,8 +365,6 @@ function loadQuestion() {
     }> ${choice}<br>`;
   });
 }
-
-
 
 // Call `selectRandomQuestions` when the quiz starts
 selectRandomQuestions();
