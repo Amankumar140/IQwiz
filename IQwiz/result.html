@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Results</title>
+        <link rel="stylesheet" href="result.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <div id="nav-name-result"></div>
+        <div class="quiz-margin-result">
+            <h1 id="Quiz-result">Quiz Results</h1>
+            <div class="quiz-style">
+                <div class="container-piechart">
+                    <canvas id="resultChart"></canvas>
+                    <div id="result-summary">
+                        <!-- Summary will be populated by JavaScript -->
+                    </div>
+                    <a href="index.html" class="restart-button">Try Again</a>
+                </div>
+            </div>
+            <button id="display-incorrect" onclick="displayIncorrectQuestions()" >Show Incorrect Questions</button>
+            <div id="incorrect-questions">
+                
+            </div>
+        </div>
+            
+          <script src="IT.js"></script>
+        <script src="script.js"></script>
+        
+    </body>
+</html>

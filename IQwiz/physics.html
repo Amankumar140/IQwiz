@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="quizstyle.css">
+    </head>
+    <body>
+        <div id="nav-name-quiz"></div>
+        <div class="quiz-style-2ndpage">
+            <div class="container">
+                <h1>Quiz Questions</h1>
+                <div id="timer">Time Remaining: 30:00</div>
+                <div id="question-container">
+                    <!-- Questions will be loaded here by JavaScript -->
+                </div>
+                <div class="navigation">
+                    <button onclick="prevQuestion()"> Previous </button>
+                    <button onclick="nextQuestion()">Next</button>
+                </div>
+                <button onclick="submitQuiz()" class="submit-button">Submit
+                    Quiz</button>
+            </div>
+        </div>
+        <script src="physics.js"></script>
+    </body>
+</html>

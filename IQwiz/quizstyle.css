@@ -1,0 +1,223 @@
+/* Global Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body{
+    height: 100vh;
+    background-image: url(topics_bg.png);
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  
+  .quiz-style-2ndpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 24px;
+    margin-left: 130px;
+    background-attachment: fixed;
+    /* Keep the background fixed during scroll */
+    width: 80%;
+    max-width: 1000px;
+  
+  }
+  
+  p {
+    font-size: larger;
+  }
+  
+  /* Container Styling */
+  .container {
+      
+     opacity: 1000%;
+    width: 90%;
+     
+    max-width: 1000px;
+    
+    padding: 40px;
+ 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+  
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    border: 2px solid #b3bbc0;
+     
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  h1 {
+    font-size: 2.8em;
+     color: #F0FFFF;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+     
+  }
+  
+  
+  #timer {
+    font-weight: bold;
+    font-size: 1.5em;
+  
+    color: #bacb74;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #E9FFDB;
+     
+    padding-bottom: 10px;
+ 
+  }
+  
+  /* Questions and Options Styling */
+  #question-container {
+    
+    margin-top: 5px;
+    text-align: left;
+    font-size: 15px;
+    /* Increased font size for questions */
+    color: white;
+    /* Darker text for improved readability */
+    margin-top: 15px;
+  }
+  
+  #question-container input[type="radio"] {
+    margin-top: 5px;
+    transform: scale(1.3);
+    /* Further increase the size of the radio button */
+    margin-right: 20px;
+    /* More space between radio button and label */
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* Change cursor to pointer */
+  }
+  
+  #question-container label {
+    font-size: 2em;
+    /* Increased font size for option labels */
+  
+    line-height: 1.6;
+    /* More line height for better spacing */
+    display: block;
+    /* Make each label a block element for easier clicking */
+    padding: 25px;
+    /* Increased padding around the labels for better clickable area */
+    margin-bottom: 20px;
+    /* Space between options */
+    background-color: #f0f4f8;
+    /* Light grey background for options */
+    border: 1px solid #3498db;
+    /* Light border around options */
+    border-radius: 12px;
+    /* Rounded corners for labels */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Smooth background change */
+  }
+  
+  /* Different Background Colors for Options */
+  #question-container label:nth-child(odd) {
+    background-color: #62abcd;
+    /* Light blue for odd options */
+  }
+  
+  #question-container label:nth-child(even) {
+    background-color: #ffe0b2;
+    /* Light orange for even options */
+  }
+  
+  #question-container label:hover {
+    background-color: #80deea;
+    /* Darker blue background on hover */
+    transform: scale(1.02);
+    /* Slightly enlarge on hover for feedback */
+  }
+  
+  /* Button Styles */
+   
+  .submit-button,
+  .navigation button {
+    display: inline-block;
+    padding: 15px 30px;
+    /* Increased padding for buttons */
+    margin: 15px 10px;
+    background-color: #b19684;
+    /* Primary button color */
+    color: #0f022e;
+    border-radius: 25px;
+    /* Rounded corners */
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    /* Increased font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    /* Added box shadow */
+    height: min-content;
+     
+    /* Purple for navigation buttons */
+  }
+  
+ 
+  
+  .submit-button {
+    background-color: #E3F988;
+    /* Orange for submit button */
+  }
+  
+  .submit-button:hover {
+    background-color: #e76642;
+    /* Darker orange on hover */
+  }
+  
+  
+  
+  
+  
+   
+  
+  .navigation button:hover {
+    background-color: #ebe6ee;
+    /* Darker purple on hover */
+  }
+  
+  /* Quiz Navigation Buttons */
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  
+  
+  #nav-name-quiz {
+    background-image: url(Untitled\ \(2\).png);
+    background-size: cover;
+     margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    opacity: 0.5;
+    height: 50px;
+    width: 140px;
+    background-color: #8ea5b5;
+    text-align: left;
+    color: #0d1e29;
+  }
+  
+ 
+   

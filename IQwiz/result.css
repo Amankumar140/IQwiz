@@ -1,0 +1,154 @@
+/* Global Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(topics_bg.png);
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ 
+
+.quiz-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-left: 20%;
+    background-attachment: fixed;
+    width: 60%;
+    max-width: 1000px;
+    padding: 40px;  
+    background-image: linear-gradient(135deg, #caefd7, #f5ccd4,#b8a4c9);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    border: 2px solid #3498db;
+}
+
+.quiz-margin-result {
+    margin-bottom: 20px;
+}
+
+.quiz-style:hover {
+    transform: translateY(-5px);
+    /* Slight upward movement on hover */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+ 
+
+/* Header Styling */
+h1 {
+    font-size: 2.8em;
+    /* Increased size for the title */
+    color: #2c3e50;
+    /* Darker blue for a modern look */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    /* Soft text shadow */
+}
+
+ 
+ 
+.restart-button
+  {
+    display: inline-block;
+    padding: 15px 30px;
+    /* Increased padding for buttons */
+    margin: 15px 10px;
+    background-color: #3498db;
+    /* Primary button color */
+    color: #fff;
+    border-radius: 25px;
+    /* Rounded corners */
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    /* Increased font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    /* Added box shadow */
+}
+
+ 
+
+ 
+
+.restart-button {
+    /* margin-top: 100px; */
+    margin-left: 60%;
+    background-color: #106579;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    /* Red for restart button */
+}
+
+.restart-button:hover {
+    background-color: #d32f2f;
+
+    /* Darker red on hover */
+}
+
+
+ 
+
+/* Result Section */
+#result-summary {
+    margin-top: 60px;
+    margin-left: 60%;
+    font-size: 1.2em;
+    color: #444;
+}
+
+ 
+.container-piechart {
+    height: 55vh;
+    margin-right: 40%;
+    display: inline;
+
+
+}
+
+/* Pie Chart Styling */
+#resultChart {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 300px;
+    width: 300px;
+    margin-left: 250px;
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+}
+
+#Quiz-result {
+    text-align: center;
+    color: #1c373a;
+}
+
+ 
+
+#nav-name-result {
+    background-image: url(Untitled\ \(2\).png);
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    opacity: 0.5;
+    height: 50px;
+    width: 140px;
+    background-color: #8ea5b5;
+    text-align: left;
+    color: #0d1e29;
+}
+
