@@ -30,11 +30,11 @@ Here are some screenshots of the **IQwiz** project:
 ### Home Page
 ![Home Page](images/Screenshot%20(30).png)
 
-### Quiz Page
+### Explore Page
 ![Quiz Page](images/Screenshot%20(31).png)
 
-### Results Page
+### Quiz Page
 ![Results Page](images/Screenshot%20(32).png)
 
-### Solution Page
+### Result Page
 ![Solution Page](images/result.jpg)
