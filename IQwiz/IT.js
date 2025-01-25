@@ -1,5 +1,5 @@
 // Timer for 30 minutes
-let timeRemaining = 1800; // 30 minutes in seconds
+let timeRemaining = 1200; // 30 minutes in seconds
 let timerInterval;
 
 function startTimer() {
