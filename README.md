@@ -23,3 +23,18 @@ IQwiz is an engaging and interactive web-based quiz platform that helps users im
 1. Clone the repository:  
    ```bash
    git clone https://github.com/Amankumar140/IQwiz.git
+## Screenshots
+
+Here are some screenshots of the **IQwiz** project:
+
+### Home Page
+![Home Page](images/Screenshot%20(30).png)
+
+### Explore Page
+![Quiz Page](images/Screenshot%20(31).png)
+
+### Quiz Page
+![Results Page](images/Screenshot%20(32).png)
+
+### Result Page
+![Solution Page](images/result.jpg)
